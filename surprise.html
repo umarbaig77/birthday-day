@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#151322" />
+    <title>Surprise — Aliza’s Birthday Surprise</title>
+    <meta name="description" content="An unexpected little birthday gift for Aliza." />
+    <meta property="og:title" content="Surprise — Aliza’s Birthday Surprise" />
+    <meta property="og:description" content="An unexpected little birthday gift for Aliza." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E🎂%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+    <canvas id="celebration" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a href="index.html" class="brand"
+        ><span class="brand-mark" aria-hidden="true">✦</span> For <span data-name>Aliza</span
+        ><small>a birthday special</small></a
+      >
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="birthday.html">Birthday</a
+        ><a href="letter.html">Letter</a
+        ><a href="surprise.html" class="active" aria-current="page">Surprise</a
+        ><a href="reasons.html">Reasons</a><a href="final.html">Final</a>
+      </nav>
+      <div class="header-actions">
+        <button class="music" aria-label="Toggle birthday music" aria-pressed="false">
+          <span class="music-icon" aria-hidden="true">♫</span
+          ><span class="music-label">Music</span></button
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-controls="main-nav"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main class="page-main enter">
+      <div class="eyebrow"><span class="dot"></span>A LITTLE SOMETHING EXTRA</div>
+      <h1>Something You<br />Didn't <em>Expect</em> 👀</h1>
+      <p class="lead">One gift. Zero wrapping skills required.</p>
+      <div
+        class="gift-scene"
+        role="img"
+        aria-label="An illustrated purple gift with a golden ribbon"
+      >
+        <div class="gift-glow"></div>
+        <span class="gift-icon">🎉</span><span class="gift-icon">🎂</span
+        ><span class="gift-icon">✨</span>
+        <div class="gift">
+          <div class="gift-box"></div>
+          <div class="gift-lid"><div class="bow"></div></div>
+        </div>
+      </div>
+      <button class="btn primary" id="open-gift">
+        Open The Gift 🎁 <span class="arrow">↗</span>
+      </button>
+      <div id="surprise-content" class="surprise-content" hidden>
+        <h2>Surprise! 🎉</h2>
+        <div class="message">
+          <p>
+            No expensive gift. No complicated explanation. Just a tiny website made specifically to
+            wish you a Happy Birthday.
+          </p>
+          <p><strong>Honestly, that's pretty decent effort. 😂</strong></p>
+        </div>
+        <div class="badges">
+          <span class="badge">🎂 Birthday Mode</span><span class="badge">✨ Good Vibes</span
+          ><span class="badge">🎉 Celebration</span
+          ><span class="badge">🏆 Another Level Unlocked</span>
+        </div>
+      </div>
+      <nav class="page-nav" aria-label="Birthday journey">
+        <a href="letter.html">← Letter</a><span class="position">04 / 06</span
+        ><a href="reasons.html">Next: Reasons →</a>
+      </nav>
+    </main>
+    <footer class="footer">
+      <span class="made"
+        >Made with good vibes &amp; questionable jokes
+        <button class="secret-star" aria-label="Little star">✦</button></span
+      ><span class="page-number"
+        >A birthday special for <strong data-name>Aliza</strong> · 04 / 06</span
+      >
+    </footer>
+    <dialog class="secret-dialog" id="secret-dialog">
+      <div class="trophy" aria-hidden="true">🏆</div>
+      <h2>WAIT... YOU FOUND THE SECRET! 🕵️‍♀️</h2>
+      <p>Achievement Unlocked:<br />Professional Birthday Website Explorer 🏆</p>
+      <button class="btn primary" id="close-secret">I'll take that award ✨</button>
+    </dialog>
+  </body>
+</html>

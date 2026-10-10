@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#151322" />
+    <title>Birthday — Aliza’s Birthday Surprise</title>
+    <meta name="description" content="Good wishes and a candlelit birthday cake for Aliza." />
+    <meta property="og:title" content="Birthday — Aliza’s Birthday Surprise" />
+    <meta
+      property="og:description"
+      content="Good wishes and a candlelit birthday cake for Aliza."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E🎂%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+    <canvas id="celebration" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a href="index.html" class="brand"
+        ><span class="brand-mark" aria-hidden="true">✦</span> For <span data-name>Aliza</span
+        ><small>a birthday special</small></a
+      >
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a
+        ><a href="birthday.html" class="active" aria-current="page">Birthday</a
+        ><a href="letter.html">Letter</a><a href="surprise.html">Surprise</a
+        ><a href="reasons.html">Reasons</a><a href="final.html">Final</a>
+      </nav>
+      <div class="header-actions">
+        <button class="music" aria-label="Toggle birthday music" aria-pressed="false">
+          <span class="music-icon" aria-hidden="true">♫</span
+          ><span class="music-label">Music</span></button
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-controls="main-nav"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main class="page-main enter">
+      <div class="eyebrow"><span class="dot"></span>TODAY IS ALL ABOUT YOU</div>
+      <h1>HAPPY BIRTHDAY,<br /><em data-name>ALIZA</em>! 🎉</h1>
+      <p class="lead">Another year successfully unlocked. Look at you go.</p>
+      <div
+        class="cake-stage"
+        aria-label="An illustrated lavender birthday cake with four glowing candles"
+        role="img"
+      >
+        <div class="cake">
+          <div class="cake-plate"></div>
+          <div class="cake-bottom">
+            <span class="sprinkle">✦</span><span class="sprinkle">·</span
+            ><span class="sprinkle">✧</span><span class="sprinkle">·</span
+            ><span class="cake-label">make a little wish</span>
+          </div>
+          <div class="cake-top">
+            <div class="icing"></div>
+            <i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i>
+          </div>
+          <div class="candles">
+            <div class="candle"><i class="flame"></i></div>
+            <div class="candle"><i class="flame"></i></div>
+            <div class="candle"><i class="flame"></i></div>
+            <div class="candle"><i class="flame"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="message">
+        <p>
+          <strong>Happy Birthday, <span data-name>Aliza</span>! 🎂</strong>
+        </p>
+        <p>Another year successfully unlocked.</p>
+        <p>
+          I hope this year brings you good moments, good people, success, new experiences, and
+          plenty of reasons to smile.
+        </p>
+        <p>Have a great birthday, enjoy your day, and make some good memories.</p>
+        <p>
+          And obviously...<br /><strong class="highlight"
+            >Don't forget the birthday treat. 😂</strong
+          >
+        </p>
+      </div>
+      <button class="btn primary" id="wish-button">
+        Make A Wish ✨ <span class="arrow">↗</span>
+      </button>
+      <p class="status" id="wish-status" role="status"></p>
+      <nav class="page-nav" aria-label="Birthday journey">
+        <a href="index.html">← Home</a><span class="position">02 / 06</span
+        ><a href="letter.html">Next: Letter →</a>
+      </nav>
+    </main>
+    <footer class="footer">
+      <span class="made"
+        >Made with good vibes &amp; questionable jokes
+        <button class="secret-star" aria-label="Little star">✦</button></span
+      ><span class="page-number"
+        >A birthday special for <strong data-name>Aliza</strong> · 02 / 06</span
+      >
+    </footer>
+    <dialog class="secret-dialog" id="secret-dialog">
+      <div class="trophy" aria-hidden="true">🏆</div>
+      <h2>WAIT... YOU FOUND THE SECRET! 🕵️‍♀️</h2>
+      <p>Achievement Unlocked:<br />Professional Birthday Website Explorer 🏆</p>
+      <button class="btn primary" id="close-secret">I'll take that award ✨</button>
+    </dialog>
+  </body>
+</html>

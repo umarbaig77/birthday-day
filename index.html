@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#151322" />
+    <title>Home — Aliza’s Birthday Surprise</title>
+    <meta
+      name="description"
+      content="A little birthday adventure for Aliza. Cake, confetti and a few questionable jokes."
+    />
+    <meta property="og:title" content="Home — Aliza’s Birthday Surprise" />
+    <meta
+      property="og:description"
+      content="A little birthday adventure for Aliza. Cake, confetti and a few questionable jokes."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E🎂%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+    <canvas id="celebration" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a href="index.html" class="brand"
+        ><span class="brand-mark" aria-hidden="true">✦</span> For <span data-name>Aliza</span
+        ><small>a birthday special</small></a
+      >
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a
+        ><a href="birthday.html">Birthday</a><a href="letter.html">Letter</a
+        ><a href="surprise.html">Surprise</a><a href="reasons.html">Reasons</a
+        ><a href="final.html">Final</a>
+      </nav>
+      <div class="header-actions">
+        <button class="music" aria-label="Toggle birthday music" aria-pressed="false">
+          <span class="music-icon" aria-hidden="true">♫</span
+          ><span class="music-label">Music</span></button
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-controls="main-nav"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero enter">
+        <div class="eyebrow"><span class="dot"></span>A LITTLE BIRTHDAY SURPRISE</div>
+        <h1>Hey <em data-name>Aliza</em> <span class="wave">👀</span></h1>
+        <p class="intro">Apparently, today is your birthday...</p>
+        <p class="subintro">So I made you a little something.</p>
+        <a class="btn primary" href="birthday.html"
+          >Enter the Birthday Zone 🎂 <span class="arrow">↗</span></a
+        >
+        <p class="aside-joke">
+          Don't expect anything too serious.<br />I have a reputation to maintain. 😂
+        </p>
+        <span class="balloon left" aria-hidden="true"></span
+        ><span class="balloon right" aria-hidden="true"></span
+        ><span class="decor one" aria-hidden="true">✦</span
+        ><span class="decor two" aria-hidden="true">✧</span
+        ><span class="decor three" aria-hidden="true">✧</span
+        ><span class="decor four" aria-hidden="true">✦</span>
+        <div
+          class="cake-stage"
+          aria-label="An illustrated lavender birthday cake with four glowing candles"
+          role="img"
+        >
+          <div class="cake">
+            <div class="cake-plate"></div>
+            <div class="cake-bottom">
+              <span class="sprinkle">✦</span><span class="sprinkle">·</span
+              ><span class="sprinkle">✧</span><span class="sprinkle">·</span
+              ><span class="cake-label">make a little wish</span>
+            </div>
+            <div class="cake-top">
+              <div class="icing"></div>
+              <i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i>
+            </div>
+            <div class="candles">
+              <div class="candle"><i class="flame"></i></div>
+              <div class="candle"><i class="flame"></i></div>
+              <div class="candle"><i class="flame"></i></div>
+              <div class="candle"><i class="flame"></i></div>
+            </div>
+          </div>
+        </div>
+        <p class="mini-caption">A little cake. A few surprises. All good vibes.</p>
+      </section>
+      <section class="countdown-section" aria-label="Birthday countdown">
+        <h2 class="section-kicker">Birthday Countdown 🎂</h2>
+        <div class="countdown" id="countdown" role="timer">
+          <div class="time-unit">
+            <div class="time-value">00</div>
+            <div class="time-label">Days</div>
+          </div>
+          <span class="time-separator" aria-hidden="true">:</span>
+          <div class="time-unit">
+            <div class="time-value">00</div>
+            <div class="time-label">Hours</div>
+          </div>
+          <span class="time-separator" aria-hidden="true">:</span>
+          <div class="time-unit">
+            <div class="time-value">00</div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <span class="time-separator" aria-hidden="true">:</span>
+          <div class="time-unit">
+            <div class="time-value">00</div>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
+        <p class="countdown-date">October 20, 2026 · A day worth counting down to</p>
+      </section>
+    </main>
+    <footer class="footer">
+      <span class="made"
+        >Made with good vibes &amp; questionable jokes
+        <button class="secret-star" aria-label="Little star">✦</button></span
+      ><span class="page-number"
+        >A birthday special for <strong data-name>Aliza</strong> · 01 / 06</span
+      >
+    </footer>
+    <dialog class="secret-dialog" id="secret-dialog">
+      <div class="trophy" aria-hidden="true">🏆</div>
+      <h2>WAIT... YOU FOUND THE SECRET! 🕵️‍♀️</h2>
+      <p>Achievement Unlocked:<br />Professional Birthday Website Explorer 🏆</p>
+      <button class="btn primary" id="close-secret">I'll take that award ✨</button>
+    </dialog>
+  </body>
+</html>

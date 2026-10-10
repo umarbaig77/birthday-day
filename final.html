@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#151322" />
+    <title>Final — Aliza’s Birthday Surprise</title>
+    <meta
+      name="description"
+      content="One last birthday surprise. Have an amazing year ahead, Aliza."
+    />
+    <meta property="og:title" content="Final — Aliza’s Birthday Surprise" />
+    <meta
+      property="og:description"
+      content="One last birthday surprise. Have an amazing year ahead, Aliza."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E🎂%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+    <canvas id="celebration" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a href="index.html" class="brand"
+        ><span class="brand-mark" aria-hidden="true">✦</span> For <span data-name>Aliza</span
+        ><small>a birthday special</small></a
+      >
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="birthday.html">Birthday</a
+        ><a href="letter.html">Letter</a><a href="surprise.html">Surprise</a
+        ><a href="reasons.html">Reasons</a
+        ><a href="final.html" class="active" aria-current="page">Final</a>
+      </nav>
+      <div class="header-actions">
+        <button class="music" aria-label="Toggle birthday music" aria-pressed="false">
+          <span class="music-icon" aria-hidden="true">♫</span
+          ><span class="music-label">Music</span></button
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-controls="main-nav"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main class="page-main enter">
+      <div class="final-intro" id="final-intro">
+        <div class="eyebrow"><span class="dot"></span>ONE LAST LITTLE SURPRISE</div>
+        <h1>Okay <em data-name>Aliza</em>...</h1>
+        <p class="intro">We've reached the end.</p>
+        <p class="lead">But obviously, I couldn't finish without one last surprise.</p>
+        <div class="final-spark" aria-hidden="true">✦</div>
+        <button class="btn primary" id="final-button">
+          REVEAL THE FINAL SURPRISE 🎁 <span class="arrow">↗</span>
+        </button>
+        <p class="aside-joke">Saved the best birthday vibes for last.</p>
+      </div>
+      <div class="final-reveal" id="final-reveal" hidden>
+        <div class="eyebrow"><span class="dot"></span>THIS ONE IS FOR YOU</div>
+        <h1 id="final-heading" tabindex="-1">
+          HAPPY BIRTHDAY,<em><span data-name>ALIZA</span>! 🎂🥳</em>
+        </h1>
+        <div
+          class="cake-stage"
+          aria-label="An illustrated lavender birthday cake with four glowing candles"
+          role="img"
+        >
+          <div class="cake">
+            <div class="cake-plate"></div>
+            <div class="cake-bottom">
+              <span class="sprinkle">✦</span><span class="sprinkle">·</span
+              ><span class="sprinkle">✧</span><span class="sprinkle">·</span
+              ><span class="cake-label">make a little wish</span>
+            </div>
+            <div class="cake-top">
+              <div class="icing"></div>
+              <i class="drip"></i><i class="drip"></i><i class="drip"></i><i class="drip"></i>
+            </div>
+            <div class="candles">
+              <div class="candle"><i class="flame"></i></div>
+              <div class="candle"><i class="flame"></i></div>
+              <div class="candle"><i class="flame"></i></div>
+              <div class="candle"><i class="flame"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <p>
+            Hope this year gives you more reasons to smile, more things to be proud of, and plenty
+            of great memories.
+          </p>
+        </div>
+        <h2>Have an amazing year ahead!</h2>
+        <p class="message">
+          Now go enjoy your birthday... and remember,<br /><strong class="highlight"
+            >I still accept cake as payment. 😂</strong
+          >
+        </p>
+        <a class="btn secondary" href="index.html">↶ Back to the beginning</a>
+      </div>
+      <nav class="page-nav" aria-label="Birthday journey">
+        <a href="reasons.html">← Reasons</a><span class="position">06 / 06</span
+        ><a href="index.html">Back home →</a>
+      </nav>
+    </main>
+    <footer class="footer">
+      <span class="made"
+        >Made with good vibes &amp; questionable jokes
+        <button class="secret-star" aria-label="Little star">✦</button></span
+      ><span class="page-number"
+        >A birthday special for <strong data-name>Aliza</strong> · 06 / 06</span
+      >
+    </footer>
+    <dialog class="secret-dialog" id="secret-dialog">
+      <div class="trophy" aria-hidden="true">🏆</div>
+      <h2>WAIT... YOU FOUND THE SECRET! 🕵️‍♀️</h2>
+      <p>Achievement Unlocked:<br />Professional Birthday Website Explorer 🏆</p>
+      <button class="btn primary" id="close-secret">I'll take that award ✨</button>
+    </dialog>
+  </body>
+</html>
